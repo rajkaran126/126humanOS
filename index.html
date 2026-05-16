@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONE:TWO:SIX - The Future Standard</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- FUTURISTIC ANIMATED BACKGROUND (Canvas) -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loader-content">
+            <h1 class="glitch-title" data-text="ONE:TWO:SIX">ONE:TWO:SIX</h1>
+            <div class="sync-container">
+                <span class="sync-text">NEURAL SYNCHRONIZATION</span>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <span class="sync-percentage" id="sync-percentage">00.0%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <main class="portfolio-container" id="main-content">
+        <!-- NAVIGATION -->
+        <nav class="glass-nav">
+            <div class="nav-logo">126 // HUMAN OS</div>
+            <ul class="nav-links">
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#performance">Performance</a></li>
+                <li><a href="#identity">Core Identity</a></li>
+            </ul>
+        </nav>
+
+        <!-- NEAT HERO SECTION -->
+        <section class="hero-section">
+            
+            <!-- Background Title -->
+            <div class="hero-bg-title">
+                <h1>ONE:TWO:SIX</h1>
+            </div>
+
+            <!-- Mythological Entity Silhouette -->
+            <div class="hero-entity">
+                <img src="entity.jpeg" alt="Mythological Entity" id="entity-image" onerror="this.style.display='none'; document.getElementById('entity-placeholder').style.display='block';">
+                <div id="entity-placeholder" class="placeholder-text" style="display:none;">
+                    [Place your image as 'entity.jpeg' in this folder]
+                </div>
+            </div>
+
+            <!-- Hero Foreground Content -->
+            <div class="hero-content">
+                <div class="hero-badge">v.126.0 - STATUS: INEVITABLE</div>
+                <p class="hero-subtitle">A HIGH-PERFORMANCE HUMAN OPERATING SYSTEM DESIGNED FOR THE FUTURE WORLD.</p>
+                <div class="hero-actions">
+                    <button class="primary-btn pulse-btn">INITIATE SEQUENCE</button>
+                </div>
+            </div>
+
+            <!-- Floating Data Fragments -->
+            <div class="data-fragment pos-1">
+                <span class="fragment-label">ADAPTABILITY</span>
+                <span class="fragment-value glow-text">98.7%</span>
+                <span class="fragment-desc">Evolves faster than environments change.</span>
+            </div>
+            <div class="data-fragment pos-2">
+                <span class="fragment-label">COGNITIVE EFFICIENCY</span>
+                <span class="fragment-value glow-text">99.2%</span>
+                <span class="fragment-desc">Converts complexity into clarity with precision.</span>
+            </div>
+            <div class="data-fragment pos-3">
+                <span class="fragment-label">STRATEGIC THINKING</span>
+                <span class="fragment-value glow-text">97.8%</span>
+                <span class="fragment-desc">Thinks ten moves ahead before others notice the board.</span>
+            </div>
+            <div class="data-fragment pos-4">
+                <span class="fragment-label">EXECUTION VELOCITY</span>
+                <span class="fragment-value glow-text">98.9%</span>
+                <span class="fragment-desc">Turns vision into momentum at impossible speed.</span>
+            </div>
+            <div class="data-fragment pos-5">
+                <span class="fragment-label">INNOVATION INDEX</span>
+                <span class="fragment-value glow-text">96.4%</span>
+                <span class="fragment-desc">Creates systems instead of following them.</span>
+            </div>
+            <div class="data-fragment pos-6">
+                <span class="fragment-label">LEADERSHIP IMPACT</span>
+                <span class="fragment-value glow-text">99.3%</span>
+                <span class="fragment-desc">Presence alone shifts direction and energy.</span>
+            </div>
+            <div class="data-fragment pos-7">
+                <span class="fragment-label">FUTURE READINESS</span>
+                <span class="fragment-value gold-text">100.0%</span>
+                <span class="fragment-desc">Built for worlds that do not yet exist.</span>
+            </div>
+        </section>
+
+        <!-- ARCHITECTURE GRID -->
+        <section id="architecture" class="section architecture-section">
+            <h2 class="section-title">126 CORE FRAMEWORK</h2>
+            <div class="grid-container">
+                <div class="glass-card tech-card">
+                    <div class="card-icon neural-icon"></div>
+                    <h3>Adaptive Intelligence</h3>
+                    <p>Learn. Evolve. Transcend.</p>
+                </div>
+                <div class="glass-card tech-card">
+                    <div class="card-icon strategy-icon"></div>
+                    <h3>Strategic Cognition</h3>
+                    <p>Think ahead. Stay ahead.</p>
+                </div>
+                <div class="glass-card tech-card">
+                    <div class="card-icon execution-icon"></div>
+                    <h3>Execution Engine</h3>
+                    <p>Ideate. Build. Scale.</p>
+                </div>
+                <div class="glass-card tech-card">
+                    <div class="card-icon leadership-icon"></div>
+                    <h3>Leadership Protocol</h3>
+                    <p>Inspire. Align. Multiply.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERFORMANCE & IDENTITY -->
+        <section id="performance" class="section performance-section">
+            <div class="split-layout">
+                <div class="performance-metrics glass-panel">
+                    <h3 class="panel-title">PERFORMANCE OVERVIEW</h3>
+                    
+                    <div class="metric-row">
+                        <div class="metric-header">
+                            <span>Strategic Thinking</span>
+                            <span class="metric-score">97.6%</span>
+                        </div>
+                        <div class="metric-bar"><div class="metric-fill" style="width: 97.6%;"></div></div>
+                    </div>
+                    
+                    <div class="metric-row">
+                        <div class="metric-header">
+                            <span>Execution Velocity</span>
+                            <span class="metric-score">98.9%</span>
+                        </div>
+                        <div class="metric-bar"><div class="metric-fill" style="width: 98.9%;"></div></div>
+                    </div>
+
+                    <div class="metric-row">
+                        <div class="metric-header">
+                            <span>Future Readiness</span>
+                            <span class="metric-score">100.0%</span>
+                        </div>
+                        <div class="metric-bar"><div class="metric-fill gold-fill" style="width: 100%;"></div></div>
+                    </div>
+                </div>
+
+                <div id="identity" class="identity-text">
+                    <blockquote class="philosophical-quote">
+                        "Some people adapt to the world. Others redesign it."
+                    </blockquote>
+                    <p class="identity-desc">
+                        Not a profile picture. Not a digital persona. Not a temporary brand. A high performance human operating system designed for the future world. Built to solve, create, influence, adapt, and architect what comes next.
+                    </p>
+                    <div class="identity-signature">
+                        <span class="sig-line"></span>
+                        <span class="sig-text">CORE IDENTITY VERIFIED</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="cyber-footer">
+            <div class="footer-grid">
+                <span class="footer-data">VISION X INTELLIGENCE X ADAPTABILITY X CREATIVITY</span>
+                <span class="footer-data highlight">BUILT FOR WHAT COMES NEXT.</span>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

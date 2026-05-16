@@ -591,8 +591,16 @@ body {
     .split-layout {
         grid-template-columns: 1fr;
     }
-    .left-fragment, .right-fragment {
-        display: none;
+    /* Shrink data fragments on tablets */
+    .data-fragment {
+        padding: 0.5rem;
+        max-width: 140px;
+    }
+    .fragment-desc {
+        display: none; /* Hide detailed descriptions to prevent clutter */
+    }
+    .fragment-value {
+        font-size: 1.2rem;
     }
 }
 
@@ -603,12 +611,31 @@ body {
         padding: 1.5rem;
     }
     .section {
-        padding: 4rem 2rem;
+        padding: 4rem 1.5rem;
     }
     .hero-bg-title h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     .hero-entity {
-        height: 50vh;
+        height: 60vh;
+    }
+    .hero-content {
+        bottom: 25vh; /* Push content up on mobile */
+    }
+    .primary-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.7rem;
+    }
+    
+    /* Clean up the orbital HUD for mobile screens */
+    .pos-1, .pos-3, .pos-4, .pos-6 {
+        display: none; /* Hide corners to keep it cinematic and clean */
+    }
+    .pos-2 { top: 15%; left: 2%; max-width: 100px; }
+    .pos-5 { top: 15%; right: 2%; max-width: 100px; }
+    .pos-7 { bottom: 5%; width: 90%; max-width: none; border-bottom: none; }
+    
+    .philosophical-quote {
+        font-size: 1.5rem;
     }
 }
